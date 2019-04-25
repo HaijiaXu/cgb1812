@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.form-check .phone-k .phone-tip {
+  font-size: 16px;
+  color: #a0a0a0;
+  top: 12px;
+}
+.form-check .pass-eye .pass-tip {
+  font-size: 16px;
+  color: #a0a0a0;
+}
+.form-check .eye {
+  display: none;
+}
+.form-check .verification-k .verification-tip {
+  font-size: 16px;
+  color: #a0a0a0;
+  top: 12px;
+}
+.form-check .phonecode-k .phonecode-tip {
+  top: 12px;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+#xue_logo .logo_center .logo_tips {
+  width: 88px;
+}
+.passport_wrap #passport_login #entry_right #entry .phone_identifying_k .phone_identifying_tip {
+  position: absolute;
+  z-index: 100px;
+  top: 15px;
+  left: 8px;
+  width: 115px;
+  color: #a0a0a0;
+}
+.passport_wrap #passport_login #entry_right #entry .phone_identifying_k #phone_identifying {
+
+  color: #a0a0a0;
+}
+.passport_wrap #passport_login #entry_right #entry .entry_item .input_text {
+
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.binding_tips {
+  width: 132px;
+  height: 32px;
+  float: left;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.contentbind .userinfor .phone_identifying_k .phone_identifying_tip {
+  width: 115px;
+  font-size: 14px;
+}
+.contentbind .userinfor .phone_identifying_k #phone_identifying {
+  border: 1px #e6e6e6 solid;
+}

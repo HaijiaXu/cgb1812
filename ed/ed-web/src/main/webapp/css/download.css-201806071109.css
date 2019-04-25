@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*重置样式*/
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+em,
+strong,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Microsoft YaHei";
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfloat:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0
+}
+
+.clearfloat {
+  zoom: 1
+}
+
+/*banner图*/
+
+.banner {
+  width: 100%;
+  height: 505px;
+  background: url("20171212banner.png-20171220.png")/*tpa=https://zt.xueersi.com/app/app_down/20171212banner.png?20171220*/ no-repeat center;
+}
+
+/*下载列表*/
+
+.down-list {
+  width: 1200px;
+  margin: 65px auto;
+  padding: 0 90px;
+}
+
+.down-list li {
+  float: left;
+  margin: 0 66px;
+  width: 205px;
+  text-align: center;
+}
+
+.down-list li h2 {
+  line-height: 30px;
+  font-size: 28px;
+  color: #111;
+}
+
+.down-list li p {
+  margin-top: 5px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #999;
+}
+
+.down-style {
+  margin-top: 30px;
+}
+
+.down-style .down-body {
+  overflow: hidden;
+}
+
+.down-style span {
+  display: block;
+  float: left;
+  width: 73px;
+  margin-right: 45px;
+}
+
+.down-style span.macDown {
+  margin-right: 0;
+}
+
+.down-style .downBtn {
+  display: block;
+  margin-bottom: 10px;
+  width: 73px;
+  height: 73px;
+  padding: 0;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.down-style .downBtn:hover {
+  background: #565656;
+}
+
+.down-style .pc .logo {
+  display: block;
+  width: 23px;
+  height: 24px;
+  background: url("winlogo.png")/*tpa=https://zt.xueersi.com/app/app_down/winlogo.png*/ no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+}
+
+.down-style .mac .logo {
+  display: block;
+  width: 24px;
+  height: 30px;
+  background: url("AppleLogo.png")/*tpa=https://zt.xueersi.com/app/app_down/AppleLogo.png*/ no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -12px;
+}
+
+.down-list .down-style p {
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.down-style img {
+  width: 110px;
+  height: 110px;
+}
+
+/*非win7及以上系统的弹层提示*/
+
+.detectMacOsMarkLayer {
+  display: none;
+  width: 465px;
+  height: 240px;
+  background: #fff;
+  border-radius: 2px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 11;
+  margin: -120px 0 0 -232px;
+}
+
+.detectOsMarkLayer {
+  display: none;
+  width: 465px;
+  height: 240px;
+  background: #fff;
+  border-radius: 2px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 11;
+  margin: -120px 0 0 -232px;
+}
+
+.markLayer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.d-os-box {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.d-text {
+  height: 40px;
+  margin: 80px 0 30px 0;
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.button-box a {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  margin: 0 20px;
+}
+
+.button-box a.btn-down {
+  border: 1px solid #ccc;
+}
+
+.button-box a.btn-cancel {
+  background: #f13232;
+  color: #fff
+}
+
+.close-icon {
+  font-size: 30px;
+  color: #999;
+  width: 23px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  cursor: pointer;
+}

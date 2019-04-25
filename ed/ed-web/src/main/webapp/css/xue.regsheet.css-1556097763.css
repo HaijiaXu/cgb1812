@@ -1,0 +1,888 @@
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, button, input, select, textarea {
+  font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,sans-serif;
+  -webkit-font-smoothing:antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a, a:link {
+  text-decoration: none;
+  color: #0076b3;
+}
+a:visited {
+  text-decoration: none;
+  color: #0076b3;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0076b3;
+}
+a:active {
+  text-decoration: underline;
+  color: #F00;
+}
+a {
+  outline: none;
+}
+ul, li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+strong {
+  color: #cc0000;
+  font-weight: normal;
+}
+button {
+  font-size: 100%;
+  border: 0;
+  cursor: pointer;
+}
+input, select, textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+u {
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+label {
+  display: block;
+  text-align: right;
+}
+body {
+  background-color: #f1f2f6;
+}
+input:focus {
+  outline: none;
+}
+/**
+ ======头部=====
+ **/
+#xue_logo {
+  height: 52px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#xue_logo .logo_center {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+#xue_logo .logo_center .logo_passport {
+  background: url("logo_pb.svg-2017")/*tpa=https://res12.xesimg.com/public/logo_pb.svg?2017*/ no-repeat;
+  background-size: 150px 30px;
+  width: 163px;
+  height: 30px;
+  float: left;
+  margin-right: 18px;
+  border-right: 1px #D9D9D9 solid;
+}
+#xue_logo .logo_center .logo_tips {
+  width: 190px;
+  height: 32px;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+#xue_logo .logo_center .binding_tips {
+  width: 190px;
+  height: 32px;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+/**
+ *
+ * authors alex liu (liuyanbin@xueersi.com)
+ * @date    2013-06-27 11:44:46
+ * @version $Id$  公用底部
+ */
+#footer {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/*===============/下：关于我们部分/====================*/
+#footer .foot_area {
+  padding: 20px 0px;
+}
+#footer .foot_area p {
+  text-align: center;
+  line-height: 180%;
+}
+#footer .foot_area p a {
+  padding: 0px 5px;
+  color: #333333;
+}
+#footer .foot_area p.link {
+  padding-top: 15px;
+}
+
+/**
+  * ======注册======*
+  */
+
+.register_wrap {
+  width: 1050px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 5px;
+  background: #fff none;
+  clear: both;
+}
+.register_wrap #passport_register {
+  height: auto;
+  overflow: hidden;
+  padding: 30px 0 30px 100px;
+}
+.register_wrap #passport_register .log_left {
+  float: left;
+}
+.register_wrap #passport_register .log_right {
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.form-check {
+  width: 370px;
+}
+.form-check em {
+  clear: both;
+}
+.form-check a {
+  color: #1e89e0;
+}
+.form-check label {
+  cursor: text;
+}
+.form-check input {
+  width: 314px;
+  height: 45px;
+  padding-left: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: 1px #e6e6e6 solid;
+  line-height: 46px;
+}
+.form-check span {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  /*width: 288px;*/
+  height: 30px;
+  line-height: 25px;
+}
+.form-check .phone-k {
+  position: relative;
+}
+.form-check .phone-k .phone-tip {
+  position: absolute;
+  font-size: 14px;
+  color: #ccc;
+  top: 14px;
+  left: 10px;
+}
+.form-check .pass-eye {
+  position: relative;
+  width: 314px;
+}
+.form-check .pass-eye .pass-tip {
+  position: absolute;
+  font-size: 14px;
+  color: #ccc;
+  top: 14px;
+  left: 10px;
+}
+.form-check .eye {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  background: url("eye1.png")/*tpa=https://res12.xesimg.com/reg/images/eye1.png*/ no-repeat;
+}
+.form-check .pass-strength {
+  width: 320px;
+}
+.form-check .pass-warning {
+  float: left;
+  width: 118px;
+}
+.form-check .pass-strong {
+  float: right;
+  display: none;
+  width: 160px;
+  height: 38px;
+  line-height: 38px;
+  color: #828282;
+  padding-left: 0;
+}
+.form-check .pass-strong .strong1 {
+  float: right;
+  margin-top: 8px;
+  width: 104px;
+  height: 17px;
+  background: url("bg_strength.gif")/*tpa=https://res12.xesimg.com/reg/images/bg_strength.gif*/ no-repeat left 0;
+}
+.form-check .pass-strong .strong2 {
+  float: right;
+  margin-top: 8px;
+  width: 104px;
+  height: 17px;
+  background: url("bg_strength.gif")/*tpa=https://res12.xesimg.com/reg/images/bg_strength.gif*/ no-repeat left 0;
+  background-position: 0% -30px;
+}
+.form-check .pass-strong .strong3 {
+  float: right;
+  margin-top: 8px;
+  width: 104px;
+  height: 17px;
+  background: url("bg_strength.gif")/*tpa=https://res12.xesimg.com/reg/images/bg_strength.gif*/ no-repeat left 0;
+  background-position: 0% -60px;
+}
+.form-check #grade {
+  display: inline-block;
+    /*width: 328px;*/
+    width: 100%;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 6px;
+  font-size: 14px;
+  color: #ccc;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+}
+.form-check .select-warning {
+  padding: 0;
+  font-size: 12px;
+  height: 42px;
+  width: 328px;
+}
+.form-check .verification-k {
+  display: inline-block;
+  position: relative;
+}
+.form-check .verification-k .verification-tip {
+  position: absolute;
+  
+  font-size: 14px;
+  color: #ccc;
+  top: 14px;
+  left: 10px;
+}
+.form-check .verification-k #verificationCode {
+  float: left;
+  width: 168px;
+  height: 47px;
+  font-size: 14px;
+}
+.form-check .verification-k img {
+  width: 130px;
+  height: 45px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+.form-check .phonecode-k {
+  display: inline-block;
+  position: relative;
+}
+.form-check .phonecode-k .phonecode-tip {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  
+  font-size: 14px;
+  color: #ccc;
+}
+.form-check .phonecode-k #phonecode {
+  float: left;
+  width: 168px;
+  height: 45px;
+  font-size: 14px;
+}
+.form-check .phonecode-k .vcode {
+  float: left;
+  margin-left: 12px;
+  width: 136px;
+  height: 45px;
+  border-radius: 3px;
+  background: #37bc9b;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+  line-height: 45px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.form-check .phonecode-k .btn-color {
+  color: #ccc;
+}
+.form-check  #tips-phonecode {
+    line-height: 20px;
+}
+.form-check .read-agreement {
+  padding-left: 0;
+  font-size: 12px;
+}
+.form-check .reg_callBack {
+  overflow: hidden;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.form-check .reg_callBack input {
+  width: 12px;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+}
+.form-check .reg_callBack span {
+  float: left;
+  padding-left: 10px;
+  height: 16px;
+  line-height: 14px;
+  color: #333;
+  font-size: 14px;
+}
+.form-check .error-message {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  clear: both;
+}
+.form-check .login-btn-submit {
+  width: 327px;
+  height: 48px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+ .log-in-link img {
+            width: 390px;
+            height: 280px;
+            padding-top: 40px;
+        }
+.to-log-in {
+            line-height: 40px;
+            color: #999;
+            padding-right: 45px;
+            text-align: right;
+        }
+.reg_agreement {
+    overflow: hidden;
+}
+.form-check  span.error {color: #f00;}
+/*第三方登录注册;*/
+.binding_wrap {
+    width: 1050px;
+    margin: 35px auto 30px;
+    border-radius: 6px;
+    padding-bottom: 40px;
+    background: #fff;
+}
+ul.tabs_list {
+    margin-left: 520px;
+    padding-top: 20px;
+}
+ul.tabs_list li {
+    float: left;
+    display: inline-block;
+    height: 34px;
+    width: 260px;
+    text-align: center;
+    margin-left: 2px;
+    padding-top: 16px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    color: #333;
+    
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #f1f2f6;
+}
+ul.tabs_list .current {
+    color: #fff;
+    background: #3bafda;
+}
+ul.tabs_list li.current a{
+    color: #fff;
+    text-decoration: none;
+}
+ul.tabs_list li  a {
+  color: #000;
+    text-decoration: none;
+}
+.contentbind {
+    width: 1050px;
+    padding: 20px auto;
+    border-top: 1px solid #3bafda;
+    clear: both;
+}
+.contentbind .userinfor {
+    width: 350px;
+    margin: 30px auto 0;
+    position: relative;
+}
+.contentbind .userinfor .welcomeuser {
+    float: left;
+    position: absolute;
+    top: -85px;
+    left: -330px;
+    height: 23px;
+    line-height: 23px;
+    color: #999;
+    font-size: 14px;
+    
+}
+.contentbind .userinfor .welcomeuser strong {
+    margin: 0 0.5em;
+}
+/*注册完成页改版*/
+.success_wrap {
+  width: 1050px;
+  margin: 35px auto 30px;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  text-align: center;
+  background: #fff;
+}
+.success_wrap img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 35px;
+  margin-right: 45px;
+}
+.success_wrap h1 {
+  margin: 10px 0 0 20px;
+  color: #e74c3c;
+  font-size: 24px;
+  font-weight: normal;
+}
+.success_wrap #my_class {
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  margin: 25px 10px 0;
+  border-radius: 3px;
+  background-color: #3bafda;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.success_wrap p {
+  width: 1050px;
+  margin: 20px auto 30px;
+  color: #666;
+  font-size: 18px;
+}
+.success_wrap span {
+  color: #666;
+  font-size: 18px;
+}
+.success_wrap div p {
+  display: inline-block;
+  margin: 5px auto 30px;
+  color: #666;
+  font-size: 18px;
+}
+.success_wrap div p span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #3bafda;
+}
+.success_wrap #jixu {
+  display: inline-block;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  margin: 10px auto;
+  border-radius: 3px;
+  background-color: #3bafda;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.success_wrap .goOnBrowse {
+  display: inline-block;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
+  color: #666;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.success_tips_item {
+  width: 740px;
+  height: 255px;
+  background: url("success-new.png")/*tpa=https://res12.xesimg.com/reg/images/success-new.png*/ 90px 90px no-repeat;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+}
+.success_tips_item .title {
+  font-size: 40px;
+  color: #333;
+  margin-top: 110px;
+  margin-bottom: 15px;
+  padding-left: 210px;
+}
+.success_tips_item .con_label {
+  font-size: 16px;
+  color: #666;
+  padding-left: 210px;
+}
+.success_tips_item .joinGroup {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+}
+.success_tips_item .joinGroup img {
+  margin: 0;
+}
+.success_find_course {
+  width: 740px;
+  height: 265px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+.success_find_course .find_course_item {
+  overflow: hidden;
+}
+.success_find_course .find_course_item p {
+  width: 100%;
+  overflow: hidden;
+}
+.success_find_course .find_course_item p.info_t {
+  font-size: 20px;
+  color: #666;
+  margin-top: 20px;
+}
+.success_find_course .find_course_item p.info_b {
+  margin: 30px 0;
+}
+.success_find_course .find_course_item p.info_bb a.btn-left {
+  float: left;
+  margin-left: 150px;
+  margin-right: 25px;
+}
+.success_find_course .find_course_item p.info_f {
+  margin-top: 70px;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+a.btn_success_course {
+  display: block;
+  color: #fff;
+  width: 260px;
+  height: 55px;
+  line-height: 55px;
+  background: #e74c3c;
+  margin: 0 auto;
+  font-size: 18px;
+  border-radius: 5px;
+}
+a.btn_backIndex {
+  float: left;
+  display: block;
+  width: 160px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #3bafda;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #3bafda;
+}
+.success_find_course .find_course_item p.info_m {
+  font-size: 14px;
+  color: #333;
+}
+.grade-select-item {
+      width: 328px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.grade-select-item #gradeSelect {
+  display: inline-block;
+  width: 328px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 6px;
+  
+  font-size: 14px;
+  color: #666;
+  border-radius: 1px;
+  border: 1px solid #e6e6e6;
+    background: #fff;
+}
+.grade-select-item .grade-tips {
+  font-size: 14px;
+  height: 48px;
+    line-height: 42px;
+  width: 328px;
+    text-align: left;
+    color: #999;
+}
+.grade-select-item .grade-btn {
+    width:328px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 20px;
+    background: #e74c3d;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.grade-select-item .grade-error {
+     line-height: 42px;
+    text-align: left;
+    color:#e74c3d;
+     font-size: 14px;
+}
+.skip-grade {
+    width:740px;
+    margin:0 auto;
+    overflow: hidden;
+    line-height: 42px;
+    text-align: right;
+    font-size: 14px;
+}
+/*拖动验证样式重置;*/
+ .form-check .phonecode-k #phonecode,#password {background: #e8e8e8;}
+        .drag-verify {
+            margin-bottom: 30px;
+        }
+ .form-check .phonecode-k .vcode {font-size: 14px;background: #e8e8e8;}
+        .drag-verify .nc-container #nc_1_wrapper,.drag-verify .nc-container #nc_2_wrapper,.drag-verify .nc-container #nc_3_wrapper,.drag-verify .nc-container #nc_4_wrapper {
+            width: 380px;
+        }
+        .nc_scale {
+            height: 45px;
+        }
+        
+        .nc-container .nc_scale span {
+            width: 50px;
+            height: 43px;
+            line-height: 45px;
+            font-size: 14px;
+            padding-left: 0;
+            border: 1px solid #e6e6e6;
+        }
+        
+        .nc-container .nc_scale .btn_slide {
+            color: #999;
+            font-size: 24px;
+            border-right: none;
+        }
+        
+        .nc-container .nc_scale .nc_ok,
+        .nc-container .nc_scale .nc_bg {
+            background: #66cc66;
+        }
+        
+        .nc-container .nc_scale span.nc-lang-cnt {
+            color: #fff;
+        }
+        
+        .nc-container .nc_scale .btn_ok {
+            line-height: 45px;
+            color: #66cc66;
+        }
+        .nc-container .nc_scale .scale_text2 {line-height:45px;}
+        .nc-container .nc_scale .clickCaptcha {width:328px;top:45px}
+        .nc-container .nc_scale .btn_warn {line-height:45px;}
+        #nc_1_clickCaptcha .nc-container .nc_scale span.nc-lang-cnt {
+            color: #666;line-height:30px;
+        }
+        .nc-container .nc_scale .imgCaptcha {
+            height: auto;
+            top: 45px;
+            width: 328px;
+        }
+
+/*头部*/ 
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+}
+.header .logo {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  background-image: url("logo_pb.svg-1017")/*tpa=https://res14.xesimg.com/public/logo_pb.svg?1017*/;
+  background-repeat: no-repeat;
+  text-indent: -999999em;
+  background-image: url("logo_pb.png")/*tpa=https://res14.xesimg.com/public/logo_pb.png*/\9;
+  background-size: 200px 35px;
+}
+.header span {
+  display: inline-block;
+  text-align: right;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+.header span a {
+  color: #ff0000;
+}
+
+/* 绑定注册*/
+.binding_wrap {width: 1200px;background: none;margin:0 auto;}
+.contentbind { width: 1200px;border: 1px solid #ccc;border-top: 3px solid #ff0000;border-radius: 2px; background: #fff;padding-bottom: 80px;}
+
+h1.binding_account {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 50px;
+  margin: 0;
+}
+.binding_tips {
+    width: 100%;
+  line-height: 60px;
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+  margin-bottom: 10px;
+}
+.binding_tips span {
+  padding: 0 5px;
+  color: #ff0000;
+}
+.binding_tabs_list {
+    width:380px;
+    margin:0 auto;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+  height: 50px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.binding_tabs_list span {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.binding_tabs_list span a {
+  color: #666;
+}
+.binding_tabs_list span.active {
+  position: relative;
+}
+.binding_tabs_list span.active a {
+  color: #ff0000;
+}
+.binding_tabs_list span.active:after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #ff0000;
+  position: absolute;
+  left: 80px;
+  bottom: 1px;
+  z-index: 1;
+}
+.userinfor input {width:368px;}
+.contentbind .userinfor {width:380px;}
+.userinfor #form_submit-login {width: 380px;background: #f13232;}
+.form-check .phonecode-k #phonecode {width: 220px;}
+.form-check .login-btn-submit {width:380px;background: #f13232;}
+.form-check .login-btn-submit:hover{
+   background-color: #fa4747;
+  border-color: #fa4747;
+}
+.form-check .login-btn-submit:active{
+  background-color: #d42525;
+   border-color: #d42525;
+}
+.form-check .phonecode-k {width: 400px;}
+.form-check .read-agreement {width: 100%;text-align: center;font-size: 14px;line-height: 45px;color:#999;}
+.form-check .read-agreement a {color:#f00;}
+/* 注册*/
+.register_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 2px;
+    clear: both;
+    border: 1px solid #ccc;
+    border-top: 3px solid #ff0000;
+}
+.form-check input {width: 368px;}
+.form-check {
+    width: 380px;
+    margin: 0 auto 30px;
+}
+.register_wrap #passport_register {
+    padding:30px 0 30px 0;
+}
+.register_wrap #passport_register .log_right {float: none;}
+.register_wrap #passport_register  h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  font-weight: normal;
+  line-height: 150px;
+}
+.register_wrap #passport_register .log_right {padding-right: 0;}
